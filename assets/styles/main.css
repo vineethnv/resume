@@ -11,6 +11,12 @@ html, body {
      -moz-box-sizing: inherit;
           box-sizing: inherit; }
 
+::-moz-selection {
+  background: #7fdef7; }
+
+::selection {
+  background: #7fdef7; }
+
 a {
   color: #1270ac;
   text-decoration: none;
@@ -624,8 +630,8 @@ header {
   padding: 40px 20px 10px 20px;
   -webkit-box-shadow: 0 2px 7px #cccccc;
           box-shadow: 0 2px 7px #cccccc;
-  background-color: rgba(47, 119, 241, 0.75);
-  z-index: 99; }
+  background-color: #7fdef7;
+  z-index: 999; }
   header .name-wrap .name-section .name {
     color: rgba(0, 0, 0, 0.75);
     font-family: "Open Sans", sans-serif;
