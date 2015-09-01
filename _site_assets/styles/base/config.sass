@@ -1,0 +1,70 @@
+@import "base/bits"
+
+html, body
+  box-sizing: border-box
+  font:
+    family: "Open Sans", sans-serif
+    weight: 400
+
+*, *:before, *:after
+  box-sizing: inherit
+
+a
+  color: #1270ac
+  text-decoration: none
+  font:
+    size: 1.2em
+    family: monospace
+    weight: 600
+  &:hover
+    color: #1fa8ff
+  &:focus
+    outline: 1px dotted #4a4a4a
+  &:active
+    color: #6ec8f5
+  &:visited
+    color: #7b1bda
+
+p, span, div, nav
+  color: $baseColor
+
+h1, h2, h3, h4, h5, h6
+  color: $headingColor
+ul
+  list-style-type: square
+  color: $listColor
+
+.section-heading
+  margin-bottom: 10px
+  padding: 10px 0
+  border-bottom: 1px solid fade-out(#000000, 0.85)
+  color: #2d2d2d
+  letter-spacing: 2px
+  font:
+    family: $sans-serif
+    weight: 700
+    size: 32px
+
+.sub-heading
+  margin-top: 20px
+  margin-bottom: 5px
+  text-align: right
+  padding: 5px 0
+  border-bottom: 1px solid fade-out(#000000, 0.85)
+  color: #2d2d2d
+  letter-spacing: 1px
+  font:
+    family: $sans-serif
+    weight: 600
+    size: 22px
+
+.list
+  list-style: none
+  margin: 20px 0 10px 10px
+  padding: 0
+  li
+    margin: 10px 0 0 0
+    font:
+      family: "Share Tech Mono", monospace
+      size: 20px
+      weight: 400

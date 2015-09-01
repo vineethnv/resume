@@ -1,0 +1,68 @@
+footer
+  opacity: 0.85
+  background-color: #ffffff
+  position: fixed
+  left: 0
+  right: 0
+  bottom: 0
+  height: 50px
+  border-top: 1px solid #cccccc
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  align-items: center
+  transition: all 100ms ease-in-out
+  &:hover
+    opacity: 1
+  .page-control
+    display: none
+    flex-direction: row
+    .control
+      border: 1px solid #cccccc
+      padding: 0 10px
+      color: #cccccc
+      cursor: pointer
+      transition: all 200ms ease-in-out
+      &:hover
+        color: #222222
+        border-color: #222222
+    .previous
+      margin: 0 0 0 20px
+    .next
+      margin: 0 0 0 5px
+  .email
+    margin: 0 0 0 20px
+    animation-name: pulse
+    animation-duration: 2s
+    animation-fill-mode: both
+    animation-iteration-count: infinite
+    .text
+      letter-spacing: 1px
+      color: #038bc6
+      font:
+        family: $sans-serif
+        size: 14px
+        weight: 400
+  .email-button
+    margin: 0 20px 0 0
+    .link
+      border: 1px solid #9e9e9e
+      border-radius: 5px
+      padding: 5px 10px
+      transition: all 200ms ease-in-out
+      &:hover, &:focus
+        border: 1px solid #c4c4c4
+      &:hover .button-text, &:hover i
+        color: #038bc6
+      i
+        margin-right: 6px
+        font-size: 12px
+        color: #a3a3a3
+        transition: all 200ms ease-in-out
+      .button-text
+        color: #a3a3a3
+        transition: all 200ms ease-in-out
+        font:
+          family: $sans-serif
+          size: 16px
+          weight: 400

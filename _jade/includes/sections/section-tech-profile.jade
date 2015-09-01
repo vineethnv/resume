@@ -1,0 +1,45 @@
+
+//- @mixins
+mixin language(name, level)
+  li.language
+    span.name= name
+    span.level= level
+
+mixin certification(title, detail)
+  li.certification
+    span.title= title
+    span.detail= detail
+
+section.tech-profile.grid-wrap.center(data-section="2")
+  .profile.medium-column
+    .section-heading Technical Profile
+    
+    .qualifications
+      .sub-heading Educational Qualifications
+      ul.qualification-list.list
+        li.qualification.post-graduation Master of Computer Applications [2012-2015]
+        li.qualification.graduation B.Sc Computer Maintenance and Electronics [2009-2012]
+    
+    .certifications
+      .sub-heading Certifications
+      ul.certification-list.list
+        +certification('CS100.1x: Introduction to Big Data with Apache Spark', '(A course of study offered by BerkeleyX)')
+        +certification('M101P: MongoDB for Developers', '(A course of study offered by MongoDB, Inc.)')
+    
+    .programming-languages
+      .sub-heading Programming Languages
+      ul.list.language-list
+        +language('C', '.....Beginner level proficiency')
+        +language('Java', '.....Beginner level proficiency')
+        +language('JavaScript', '.....Moderate level proficiency')
+        +language('PHP', '.....Moderate level proficiency')
+        +language('Objective-C', '.....Beginner level proficiency')
+        +language('HTML', '.....Moderate level proficiency')
+        +language('CSS', '.....Moderate level proficiency')
+    
+    .other-technologies
+      .sub-heading Other Topics/Technologies
+      ul.others-list.list
+        li.other Knowledge in RDBMS/MySQL
+        li.other Knowledge in NoSQL/MongoDB
+        li.other Knowledge in Mobile Development - iOS

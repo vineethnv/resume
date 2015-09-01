@@ -1,0 +1,29 @@
+
+//- @mixin
+mixin detail(college, university, mark)
+  li.detail
+    span.college= college
+    span.university= university
+    span.mark Aggregate Percentage: #{mark}%
+  
+  
+  
+section.education.grid-wrap.center(data-section="3")
+  .education-details.medium-column
+    .section-heading Education
+    .post-graduation
+      .sub-heading Master of Computer Applications<br/>[2012-2015]
+      ul.pg-detail-list.list
+        +detail('Administrative Management College, Bangalore', 'Bangalore University', '70.52')
+    .graduation
+      .sub-heading B.Sc Computer Maintenance and Electronics<br/>[2009-2012]
+      ul.ug-detail-list.list
+        +detail('Union Christian Collge, Aluva', 'Mahatma Gandhi University, Kottayam', '71.25')
+    .pre-degree
+      .sub-heading Plus Two (XII)<br/>[2008]
+      ul.plus-two-detail-list.list
+        +detail('Govt. Boys H.S.S Perumbavoor', 'Higher Secondary Education Board, Kerala', '81.66')
+    .sslc
+      .sub-heading SSLC (X)<br/>[2006]
+      ul.sslc-detail-list.list
+        +detail('G.V.H.S Koovappady', 'Kerala State Education Board', '84.60')

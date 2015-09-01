@@ -1,0 +1,21 @@
+
+//- @mixin
+mixin detail(label, value)
+  li.detail
+    span.label #{label} : 
+    span.value #{value}
+    
+section.personal-details.grid-wrap.center(data-section="6")
+  .details.medium-column
+    .section-heading Personal Details
+    ul.details-list.list
+      +detail('Name', 'Vineeth N V')
+      li.detail
+        span.label Address :
+        span.value Mallussery House,<br/>Edavoor P.O,<br/>Kalady,<br/>Ernakulam,<br/>Kerala - 683544
+      +detail('Date of Birth', '10-June-1991')
+      +detail('Gender', 'Male')
+      +detail('Nationality', 'Indian')
+      +detail('Email', 'vineeth1991@gmail.com')
+      +detail('Contact', '+91 9539 568 276')
+      +detail('Passport Number', 'M9433266')

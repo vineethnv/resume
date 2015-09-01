@@ -1,0 +1,30 @@
+.grid-wrap
+  display: flex
+  flex-direction: row
+  .column
+    width: 440px
+    margin: 0 20px
+  .medium-column
+    width: 640px
+    margin: 0 20px
+  .full-column
+    width: 960px
+    margin: 0 20px
+
+.center
+  justify-content: center
+.left
+  justify-content: flex-start
+.right
+  justify-content: flex-end
+.space-around
+  justify-content: space-around
+.space-between
+  justify-content: space-between
+
+@media (max-width: 960px)
+  .grid-wrap
+    flex-direction: column
+    .column, .medium-column, .full-column
+      width: auto
+      margin: 0 20px
