@@ -42,7 +42,7 @@ ul {
   list-style-type: square;
   color: #40cd5b; }
 
-.section-heading {
+h2.section-heading {
   margin-bottom: 10px;
   padding: 10px 0;
   border-bottom: 1px solid rgba(0, 0, 0, 0.15);
