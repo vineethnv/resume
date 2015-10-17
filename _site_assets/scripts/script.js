@@ -1,3 +1,8 @@
-$(function(){
-  
-});
+
+/**
+** Jquery Self Invoking Function
+**
+*/
+(function($) {
+
+})(jQuery);
