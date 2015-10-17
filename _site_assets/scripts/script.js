@@ -1,3 +1,4 @@
+'use strict';
 
 /**
 ** Jquery Self Invoking Function
