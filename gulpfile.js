@@ -30,7 +30,7 @@ var notify = require('gulp-notify');
   */
 var sass   = require('gulp-sass');
 var gpcss  = require('gulp-postcss');
-var ap     = require('autoprefixer-core');
+var ap     = require('autoprefixer');
 
 /**
   * Following variable used for compiling jade templates
@@ -99,7 +99,7 @@ gulp.task('script', function() {
   */
 gulp.task('sass', function() {
   return gulp.src(paths.sass.src)
-    .pipe(sass().on('error', sass.logError))
+    .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
     .pipe(gpcss([ ap({ browsers: ['last 15 versions', '> 2%', 'Firefox > 20'] }) ]))
     .pipe(gulp.dest(paths.sass.dest))
     .pipe(bSync.stream());
